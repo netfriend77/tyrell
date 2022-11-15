@@ -1,0 +1,31 @@
+<html>
+    <header>
+        <title>Card Distributor</title>
+        <style>
+            td {
+                font-family: sans-serif;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./js/index.js"></script>
+    </header>
+    <body>
+        <form action="./component/cards.php" id="card">
+        <table align="center" border="0" cellpadding="5">
+            <thead><td colspan="4" align="center"><b>Card Distributor</b></td></thead>
+            <tr>
+                <td>Number of People</td>
+                <td>:</td>
+                <td><input type="text" name="counter" id="counter"></td>
+                <td><button type="button" value="Distribute Card" id="distribute">Distribute Card</button>
+            </tr>
+            <tr><td colspan="4">
+                <h5 id="validate_counter" style="color: red;">** Input value does
+                    not exist or value is invalid
+                </h5>
+            </td></tr>
+        </table>
+        <table  align="center" border="0" cellpadding="5"><tbody id="person_tab"></tbody></table>
+        </form>
+    </body>
+</html>
